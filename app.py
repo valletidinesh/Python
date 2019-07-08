@@ -22,6 +22,7 @@ def ans_Print():				#ans_print function is used to the print the Total_marks, an
 		print(str(i+1)+"\t"+str(fans[i])+"\t\t"+str(ans[i])+"\t\t"+str(marks[i]))
 	return sum(marks)
 if (user_name == "ICON") and (password == "CSE"):    #check wheather Username and Password is correct or not
+						     #Here user_name = ICON and password = CSE
 	os.system('cls')
 	print ("welcome!")
 	instructions = open("instr.txt").read()       #instr.txt is a text file which tells about the instructions to write the Quiz
