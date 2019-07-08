@@ -1,9 +1,9 @@
 class Queue:
-    def __init__(self):
+    def __init__(self):        
         self.s1 = []
         self.s2 = []
 
-    def enQueue(self,data):
+    def enQueue(self,data):                 #fuction is for inserting elements into the Queue in FIFO manner
         while len(self.s1)!=0:
             self.s2.append(self.s1[-1])
             self.s1.pop()
@@ -14,7 +14,7 @@ class Queue:
 
         print("%d appended"%data)
 
-    def deQueue(self):
+    def deQueue(self):                      #fuction is for deleting elements from the Queue in FIFO manner
         if len(self.s1) == 0:
             print("Q is Empty")
 
