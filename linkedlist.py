@@ -35,10 +35,21 @@ class SingleLinkedList:
 
 list = SingleLinkedList()
 
-list.create_list()
-print("1.Insert_at_beginning:")
-n = int(input())
-if n == 1:
-    data = int(input("enter data:"))
-    list.insert_at_beginning(data)
-list.display_list()
+while True:
+    print("1.create_list")
+    print("2.insert_at_beginning")
+    print("3.insert_at_end")
+    print("4.display_list")
+    print("5.Quit")
+    
+    n = int(input("Enter your choice:"))
+    if n == 1:
+        list.create_list()
+    elif n == 2:
+        list.insert_at_beginning()
+    elif n == 3:
+        list.insert_at_end()
+    elif n == 4:
+        list.display_list()
+    elif n == 5:
+        break
