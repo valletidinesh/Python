@@ -1,4 +1,4 @@
-def prime(n):
+def prime(n):                           #function for number of primes less than n
     prme = [True]*(n+1)
     p = 2
     while p*p <=n:
@@ -11,5 +11,5 @@ def prime(n):
         if prme[i] == True:
             count += 1
     return count
-n = int(input())
+n = int(input())            
 print(prime(n))
