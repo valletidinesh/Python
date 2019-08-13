@@ -46,9 +46,11 @@ while True:
     if n == 1:
         list.create_list()
     elif n == 2:
-        list.insert_at_beginning()
+        data = int(input("Enter data:"))
+        list.insert_at_beginning(data)
     elif n == 3:
-        list.insert_at_end()
+        data = int(input("Enter data:"))
+        list.insert_at_end(data)
     elif n == 4:
         list.display_list()
     elif n == 5:
